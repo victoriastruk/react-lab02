@@ -1,0 +1,54 @@
+.counter {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.counter__output {
+ margin-right: 20px;
+ margin-left: 10px;
+}
+
+.btn__container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  column-gap: 10px;
+}
+
+.control__btn {
+  font-size: 20px;
+  padding: 5px 15px;
+  background-color: transparent;
+  color: blue;
+  border: 1px solid blue;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.control__btn:hover {
+  background-color: rgb(16, 0, 54);
+  color: rgb(255, 255, 255);
+  border: 1px solid rgb(16, 0, 54);
+}
+
+.reset {
+  width: 100px;
+  font-size: 18px;
+  padding: 10px 20px;
+  background-color: transparent;
+  color: blue;
+  border: 1px solid blue;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.reset:hover {
+  background-color: rgb(16, 0, 54);
+  color: rgb(255, 255, 255);
+  border: 1px solid rgb(16, 0, 54);
+}
