@@ -10,6 +10,7 @@ const counters = [
 
 
 export default function MyCounter() {
+  // Перевірка на наявність параметрів. Якщо немає -  додаємо по замовчуванню
   for(let i = 0; i<counters.length; i++){
     if(counters[i].hasOwnProperty('initial') === false){
         counters[i].initial = 0;
@@ -20,9 +21,8 @@ export default function MyCounter() {
     }
   }
   
-
 const [counts, setCounters] = useState( counters );
-
+  //Лічильник зростання
   const increase = ( id ) => {
     const updatedCounters = counts.map( el =>
       ( el.id === id && el.initial < el.max )
@@ -31,7 +31,7 @@ const [counts, setCounters] = useState( counters );
     setCounters( updatedCounters );
   };
 
-  //decrease counter
+  //Лічильник спадання
   const decrease = ( id ) => {
     const updatedCounters = counts.map( el => 
       (el.id === id && el.initial > el.min)
@@ -40,7 +40,7 @@ const [counts, setCounters] = useState( counters );
     setCounters( updatedCounters );
   };
 
-  //reset counter
+  //Скасування
   const reset = ( id ) => {
     const updatedCounters = counts.map
     ( el => el.id === id

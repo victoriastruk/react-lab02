@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import MyCounter from './MyCounter';
+import Cart from './Cart';
 import reportWebVitals from './reportWebVitals';
 
 
@@ -9,6 +10,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <MyCounter />
+    <Cart />
   </React.StrictMode>
 );
 
